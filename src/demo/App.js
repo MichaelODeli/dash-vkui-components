@@ -1,7 +1,7 @@
 /* eslint no-magic-numbers: 0 */
 import React, { useState } from 'react';
 
-import { {{cookiecutter.component_name}} } from '../lib';
+import { DashVkuiComponents } from '../lib';
 
 const App = () => {
 
@@ -12,7 +12,7 @@ const App = () => {
 
     return (
         <div>
-            <{{cookiecutter.component_name}}
+            <DashVkuiComponents
                 setProps={setProps}
                 {...state}
             />

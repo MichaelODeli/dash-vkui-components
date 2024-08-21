@@ -8,7 +8,7 @@ import PropTypes from 'prop-types';
  * It renders an input with the property `value`
  * which is editable by the user.
  */
-const {{cookiecutter.component_name}} = (props) => {
+const DashVkuiComponents = (props) => {
     const {id, label, setProps, value} = props;
 
     return (
@@ -33,9 +33,9 @@ const {{cookiecutter.component_name}} = (props) => {
     );
 }
 
-{{cookiecutter.component_name}}.defaultProps = {};
+DashVkuiComponents.defaultProps = {};
 
-{{cookiecutter.component_name}}.propTypes = {
+DashVkuiComponents.propTypes = {
     /**
      * The ID used to identify this component in Dash callbacks.
      */
@@ -58,4 +58,4 @@ const {{cookiecutter.component_name}} = (props) => {
     setProps: PropTypes.func
 };
 
-export default {{cookiecutter.component_name}};
+export default DashVkuiComponents;

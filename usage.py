@@ -1,10 +1,10 @@
-import {{cookiecutter.project_shortname}}
+import dash_vkui_components
 from dash import Dash, callback, html, Input, Output
 
 app = Dash(__name__)
 
 app.layout = html.Div([
-    {{cookiecutter.project_shortname}}.{{cookiecutter.component_name}}(
+    dash_vkui_components.DashVkuiComponents(
         id='input',
         value='my-value',
         label='my-label'

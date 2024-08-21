@@ -1,0 +1,11 @@
+include dash_vkui_components/dash_vkui_components.min.js
+include dash_vkui_components/dash_vkui_components.min.js.map
+include dash_vkui_components/async-*.js
+include dash_vkui_components/async-*.js.map
+include dash_vkui_components/*-shared.js
+include dash_vkui_components/*-shared.js.map
+include dash_vkui_components/metadata.json
+include dash_vkui_components/package-info.json
+include README.md
+include LICENSE
+include package.json

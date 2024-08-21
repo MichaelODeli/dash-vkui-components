@@ -28,11 +28,7 @@ _current_path = _os.path.dirname(_os.path.abspath(__file__))
 
 _this_module = _sys.modules[__name__]
 
-async_resources = [
-    {%- if cookiecutter.use_async == "True" -%}
-    "{{cookiecutter.component_name}}",
-    {%- endif -%}
-]
+async_resources = []
 
 _js_dist = []
 
@@ -70,19 +66,13 @@ _js_dist.extend(
 _js_dist.extend(
     [
         {
-            'relative_package_path': '{{cookiecutter.project_shortname}}.min.js',
-    {% if cookiecutter.publish_on_npm == 'True' -%}
-            'external_url': 'https://unpkg.com/{0}@{2}/{1}/{1}.min.js'.format(
-                package_name, __name__, __version__),
-    {%- endif %}
+            'relative_package_path': 'dash_vkui_components.min.js',
+    
             'namespace': package_name
         },
         {
-            'relative_package_path': '{{cookiecutter.project_shortname}}.min.js.map',
-    {% if cookiecutter.publish_on_npm == 'True' -%}
-            'external_url': 'https://unpkg.com/{0}@{2}/{1}/{1}.min.js.map'.format(
-                package_name, __name__, __version__),
-    {%- endif %}
+            'relative_package_path': 'dash_vkui_components.min.js.map',
+    
             'namespace': package_name,
             'dynamic': True
         }
